@@ -1,0 +1,228 @@
+<?php
+			$optionsArray = array( 'captcha' => array( 'captcha' => false ),
+'fields' => array( 'gridFields' => array(  ),
+'searchRequiredFields' => array(  ),
+'searchPanelFields' => array(  ),
+'fieldItems' => array(  ) ),
+'layoutHelper' => array( 'formItems' => array( 'formItems' => array( 'above-grid' => array( 'login_message' ),
+'top' => array( 'login-logo',
+'text',
+'text1',
+'login_welcome' ),
+'grid' => array( 'username_label',
+'username',
+'password_label',
+'password',
+'remember_password',
+'login_remind',
+'guest_login' ),
+'footer' => array( 'login_button' ),
+'superbottom' => array(  ) ),
+'formXtTags' => array( 'footer' => array( 'signin_button' ),
+'superbottom' => array(  ) ),
+'itemForms' => array( 'login_message' => 'above-grid',
+'login-logo' => 'top',
+'text' => 'top',
+'text1' => 'top',
+'login_welcome' => 'top',
+'username_label' => 'grid',
+'username' => 'grid',
+'password_label' => 'grid',
+'password' => 'grid',
+'remember_password' => 'grid',
+'login_remind' => 'grid',
+'guest_login' => 'grid',
+'login_button' => 'footer' ),
+'itemLocations' => array(  ),
+'itemVisiblity' => array(  ) ),
+'itemsByType' => array( 'username_label' => array( 'username_label' ),
+'username' => array( 'username' ),
+'password_label' => array( 'password_label' ),
+'password' => array( 'password' ),
+'login_message' => array( 'login_message' ),
+'login_button' => array( 'login_button' ),
+'guest_login' => array( 'guest_login' ),
+'remember_password' => array( 'remember_password' ),
+'login-logo' => array( 'login-logo' ),
+'login_welcome' => array( 'login_welcome' ),
+'login_remind' => array( 'login_remind' ),
+'text' => array( 'text',
+'text1' ) ),
+'cellMaps' => array(  ) ),
+'page' => array( 'verticalBar' => false,
+'labeledButtons' => array( 'update_records' => array(  ),
+'print_pages' => array(  ),
+'register_activate_message' => array(  ),
+'details_found' => array(  ) ),
+'hasCustomButtons' => false,
+'customButtons' => array(  ),
+'hasNotifications' => false ),
+'events' => array( 'maps' => array(  ),
+'mapsData' => array(  ),
+'buttons' => array(  ) ) );
+			$pageArray = array( 'id' => 'login',
+'type' => 'login',
+'layoutId' => 'pretty1',
+'disabled' => 0,
+'default' => 0,
+'forms' => array( 'above-grid' => array( 'modelId' => 'login-above-grid',
+'grid' => array( array( 'cells' => array( array( 'cell' => 'c1' ) ),
+'section' => '' ) ),
+'cells' => array( 'c1' => array( 'model' => 'c1',
+'items' => array( 'login_message' ) ) ),
+'deferredItems' => array(  ),
+'recsPerRow' => 1 ),
+'top' => array( 'modelId' => 'plogin-header',
+'grid' => array( array( 'cells' => array( array( 'cell' => 'c1',
+'colspan' => 1 ) ),
+'section' => '' ),
+array( 'cells' => array( array( 'cell' => 'c3',
+'colspan' => 1 ) ),
+'section' => '' ) ),
+'cells' => array( 'c1' => array( 'model' => 'c1',
+'items' => array( 'login-logo',
+'text',
+'text1' ) ),
+'c3' => array( 'model' => 'c3',
+'items' => array( 'login_welcome' ) ) ),
+'deferredItems' => array(  ),
+'recsPerRow' => 1 ),
+'grid' => array( 'modelId' => 'plogin-grid',
+'grid' => array( array( 'cells' => array( array( 'cell' => 'c1',
+'colspan' => 2 ) ),
+'section' => '' ),
+array( 'cells' => array( array( 'cell' => 'c2',
+'colspan' => 2 ) ),
+'section' => '' ),
+array( 'cells' => array( array( 'cell' => 'c4' ),
+array( 'cell' => 'c6' ) ),
+'section' => '' ) ),
+'cells' => array( 'c1' => array( 'model' => 'c1',
+'items' => array( 'username_label',
+'username' ) ),
+'c2' => array( 'model' => 'c2',
+'items' => array( 'password_label',
+'password' ) ),
+'c4' => array( 'model' => 'c4',
+'items' => array( 'remember_password' ) ),
+'c6' => array( 'model' => 'c6',
+'items' => array( 'login_remind',
+'guest_login' ) ) ),
+'deferredItems' => array(  ),
+'recsPerRow' => 1 ),
+'footer' => array( 'modelId' => 'plogin-footer',
+'grid' => array( array( 'section' => '',
+'cells' => array( array( 'cell' => 'c1' ) ) ) ),
+'cells' => array( 'c1' => array( 'model' => 'c1',
+'items' => array( 'login_button' ) ) ),
+'deferredItems' => array(  ),
+'recsPerRow' => 1 ),
+'superbottom' => array( 'modelId' => 'plogin-superbottom',
+'grid' => array(  ),
+'cells' => array(  ),
+'deferredItems' => array(  ),
+'recsPerRow' => 1 ) ),
+'items' => array( 'username_label' => array( 'type' => 'username_label',
+'font-size' => '14px',
+'bold' => true,
+'font-family' => 'Montserrat' ),
+'username' => array( 'type' => 'username',
+'customCSS' => '.form-control {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #6f6f6f;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}' ),
+'password_label' => array( 'type' => 'password_label',
+'font-size' => '14px',
+'bold' => true,
+'font-family' => 'Montserrat',
+'label' => array( 'type' => 0,
+'text' => 'Kata Sandi' ) ),
+'password' => array( 'type' => 'password',
+'customCSS' => '.form-control {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #6f6f6f;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}' ),
+'login_message' => array( 'type' => 'login_message' ),
+'login_button' => array( 'type' => 'login_button',
+'width' => '100%',
+'buttonStyle' => 'default',
+'buttonSize' => 'large',
+'label' => array( 'type' => 0,
+'text' => 'Login' ) ),
+'guest_login' => array( 'type' => 'guest_login' ),
+'remember_password' => array( 'type' => 'remember_password' ),
+'login-logo' => array( 'type' => 'login-logo',
+'font-size' => '24px',
+'bold' => true,
+'font-family' => 'Montserrat' ),
+'login_welcome' => array( 'type' => 'login_welcome',
+'bold' => true,
+'font-size' => '16px',
+'font-family' => 'Montserrat' ),
+'login_remind' => array( 'type' => 'login_remind',
+'label' => array( 'type' => 0,
+'text' => 'Lupa Kata Sandi?' ),
+'underline' => true ),
+'text' => array( 'type' => 'text',
+'label' => array( 'text' => 'Selamat datang di',
+'type' => 0 ),
+'editedByRte' => false,
+'bold' => true,
+'font-size' => '25px',
+'font-family' => 'Montserrat' ),
+'text1' => array( 'type' => 'text',
+'label' => array( 'text' => 'Talisman Digital',
+'type' => 0 ),
+'editedByRte' => false,
+'font-size' => '25px',
+'bold' => true,
+'font-family' => 'Montserrat',
+'italic' => true,
+'color' => '#008cba' ) ),
+'dbProps' => array(  ),
+'version' => 11,
+'imageItem' => array( 'type' => 'page_image',
+'fullSize' => true,
+'image' => array( 'image' => 'REV2. Login page TSUN BSI.png',
+'source' => 2 ),
+'width' => '900px',
+'height' => '750px' ),
+'imageBgColor' => '#f2f2f2',
+'controlsBgColor' => 'white',
+'imagePosition' => 'left',
+'pageCSS' => '/* Put  your custom CSS code here */
+
+.r-pretty-login-page > .r-controls .r-mainform {
+    min-width: 350px;
+    width: 550px;
+    margin-bottom: 50px;
+  }' );
+		?>

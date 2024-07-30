@@ -1,0 +1,223 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel TEMPBSICIT_COLL export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$IDCIT_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+				
+			{"text":{$CIT_REGDATE_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$CIT_IDCBG_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$CIT_MTU_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$CIT_TTG_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$CIT_DATE_DEPART_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$CIT_DATE_ARRIV_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$CIT_EMP_NAMA_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$CIT_SEC_NAMA_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$CIT_VECH_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$CIT_NUMBER_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$CIT_ADD_USER_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$CIT_ADD_DATE_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$CIT_EDIT_USER_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$CIT_EDIT_DATE_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$CIT_TSI_pdfvalue},"hidden":"{$item_hide_export_field15}"},
+				
+				
+			{"text":{$CIT_FL_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$CIT_ASAL_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$CIT_TUJUAN_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+				
+			{"text":{$CIT_TOKEN_pdfvalue},"hidden":"{$item_hide_export_field19}"},
+				
+				
+			{"text":{$CIT_BSMID_pdfvalue},"hidden":"{$item_hide_export_field20}"},
+				
+				
+			{"text":{$CIT_PROPOSAL_pdfvalue},"hidden":"{$item_hide_export_field21}"},
+				
+				
+			{"text":{$CIT_PREMI_pdfvalue},"hidden":"{$item_hide_export_field22}"},
+				
+				
+			{"text":{$CIT_PERIODE_END_pdfvalue},"hidden":"{$item_hide_export_field23}"},
+				
+				
+			{"text":{$CIT_APP_USER_pdfvalue},"hidden":"{$item_hide_export_field24}"},
+				
+				
+			{"text":{$CIT_APP_DATE_pdfvalue},"hidden":"{$item_hide_export_field25}"},
+				
+				
+			{"text":{$CIT_APP_NOTE_pdfvalue},"hidden":"{$item_hide_export_field26}"},
+				
+				
+			{"text":{$CIT_APP_FL_pdfvalue},"hidden":"{$item_hide_export_field27}"},
+				
+				
+			{"text":{$CIT_TO_USER_pdfvalue},"hidden":"{$item_hide_export_field28}"},
+				
+				
+			{"text":{$CIT_TO_DATE_pdfvalue},"hidden":"{$item_hide_export_field29}"},
+				
+				
+			{"text":{$CIT_RATE_pdfvalue},"hidden":"{$item_hide_export_field30}"},
+				
+				
+			{"text":{$CIT_LIMIT_pdfvalue},"hidden":"{$item_hide_export_field31}"},
+				
+				
+			{"text":{$IS_OL_pdfvalue},"hidden":"{$item_hide_export_field32}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

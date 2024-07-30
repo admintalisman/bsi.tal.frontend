@@ -1,0 +1,876 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel TEMPBSICIT_verifikasi search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN IDCIT_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_IDCIT}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="IDCIT{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="IDCIT" data-fieldname="IDCIT" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_IDCIT}">
+		{$label TEMPBSICIT_verifikasi IDCIT }	</label>
+	<div class="r-search-option">
+		{$searchtype_IDCIT}
+	</div>
+	<div class="r-search-field">
+		{$IDCIT_editcontrol}	</div>
+	<div class="r-search-field">
+		{$IDCIT_editcontrol1}
+	</div>
+	
+</div>
+
+{END IDCIT_fieldblock}
+											
+{BEGIN CIT_REGDATE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_REGDATE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_REGDATE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="CIT_REGDATE" data-fieldname="CIT_REGDATE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_REGDATE}">
+		{$label TEMPBSICIT_verifikasi CIT_REGDATE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_REGDATE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_REGDATE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_REGDATE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_REGDATE_fieldblock}
+											
+{BEGIN CIT_IDCBG_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_IDCBG}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_IDCBG{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="CIT_IDCBG" data-fieldname="CIT_IDCBG" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_IDCBG}">
+		{$label TEMPBSICIT_verifikasi CIT_IDCBG }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_IDCBG}
+	</div>
+	<div class="r-search-field">
+		{$CIT_IDCBG_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_IDCBG_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_IDCBG_fieldblock}
+											
+{BEGIN CIT_MTU_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_MTU}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_MTU{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="CIT_MTU" data-fieldname="CIT_MTU" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_MTU}">
+		{$label TEMPBSICIT_verifikasi CIT_MTU }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_MTU}
+	</div>
+	<div class="r-search-field">
+		{$CIT_MTU_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_MTU_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_MTU_fieldblock}
+											
+{BEGIN CIT_TTG_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TTG}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TTG{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="CIT_TTG" data-fieldname="CIT_TTG" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TTG}">
+		{$label TEMPBSICIT_verifikasi CIT_TTG }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TTG}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TTG_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TTG_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TTG_fieldblock}
+											
+{BEGIN CIT_DATE_DEPART_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_DATE_DEPART}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_DATE_DEPART{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="CIT_DATE_DEPART" data-fieldname="CIT_DATE_DEPART" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_DATE_DEPART}">
+		{$label TEMPBSICIT_verifikasi CIT_DATE_DEPART }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_DATE_DEPART}
+	</div>
+	<div class="r-search-field">
+		{$CIT_DATE_DEPART_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_DATE_DEPART_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_DATE_DEPART_fieldblock}
+											
+{BEGIN CIT_DATE_ARRIV_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_DATE_ARRIV}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_DATE_ARRIV{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="CIT_DATE_ARRIV" data-fieldname="CIT_DATE_ARRIV" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_DATE_ARRIV}">
+		{$label TEMPBSICIT_verifikasi CIT_DATE_ARRIV }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_DATE_ARRIV}
+	</div>
+	<div class="r-search-field">
+		{$CIT_DATE_ARRIV_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_DATE_ARRIV_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_DATE_ARRIV_fieldblock}
+											
+{BEGIN CIT_EMP_NAMA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_EMP_NAMA}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_EMP_NAMA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="CIT_EMP_NAMA" data-fieldname="CIT_EMP_NAMA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_EMP_NAMA}">
+		{$label TEMPBSICIT_verifikasi CIT_EMP_NAMA }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_EMP_NAMA}
+	</div>
+	<div class="r-search-field">
+		{$CIT_EMP_NAMA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_EMP_NAMA_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_EMP_NAMA_fieldblock}
+											
+{BEGIN CIT_SEC_NAMA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_SEC_NAMA}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_SEC_NAMA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="CIT_SEC_NAMA" data-fieldname="CIT_SEC_NAMA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_SEC_NAMA}">
+		{$label TEMPBSICIT_verifikasi CIT_SEC_NAMA }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_SEC_NAMA}
+	</div>
+	<div class="r-search-field">
+		{$CIT_SEC_NAMA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_SEC_NAMA_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_SEC_NAMA_fieldblock}
+											
+{BEGIN CIT_VECH_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_VECH}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_VECH{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="CIT_VECH" data-fieldname="CIT_VECH" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_VECH}">
+		{$label TEMPBSICIT_verifikasi CIT_VECH }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_VECH}
+	</div>
+	<div class="r-search-field">
+		{$CIT_VECH_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_VECH_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_VECH_fieldblock}
+											
+{BEGIN CIT_NUMBER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_NUMBER}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_NUMBER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="CIT_NUMBER" data-fieldname="CIT_NUMBER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_NUMBER}">
+		{$label TEMPBSICIT_verifikasi CIT_NUMBER }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_NUMBER}
+	</div>
+	<div class="r-search-field">
+		{$CIT_NUMBER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_NUMBER_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_NUMBER_fieldblock}
+											
+{BEGIN CIT_ADD_USER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_ADD_USER}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_ADD_USER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="CIT_ADD_USER" data-fieldname="CIT_ADD_USER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_ADD_USER}">
+		{$label TEMPBSICIT_verifikasi CIT_ADD_USER }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_ADD_USER}
+	</div>
+	<div class="r-search-field">
+		{$CIT_ADD_USER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_ADD_USER_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_ADD_USER_fieldblock}
+											
+{BEGIN CIT_ADD_DATE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_ADD_DATE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_ADD_DATE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="CIT_ADD_DATE" data-fieldname="CIT_ADD_DATE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_ADD_DATE}">
+		{$label TEMPBSICIT_verifikasi CIT_ADD_DATE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_ADD_DATE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_ADD_DATE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_ADD_DATE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_ADD_DATE_fieldblock}
+											
+{BEGIN CIT_EDIT_USER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_EDIT_USER}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_EDIT_USER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="CIT_EDIT_USER" data-fieldname="CIT_EDIT_USER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_EDIT_USER}">
+		{$label TEMPBSICIT_verifikasi CIT_EDIT_USER }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_EDIT_USER}
+	</div>
+	<div class="r-search-field">
+		{$CIT_EDIT_USER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_EDIT_USER_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_EDIT_USER_fieldblock}
+											
+{BEGIN CIT_EDIT_DATE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_EDIT_DATE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_EDIT_DATE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="CIT_EDIT_DATE" data-fieldname="CIT_EDIT_DATE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_EDIT_DATE}">
+		{$label TEMPBSICIT_verifikasi CIT_EDIT_DATE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_EDIT_DATE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_EDIT_DATE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_EDIT_DATE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_EDIT_DATE_fieldblock}
+											
+{BEGIN CIT_TSI_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TSI}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TSI{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="CIT_TSI" data-fieldname="CIT_TSI" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TSI}">
+		{$label TEMPBSICIT_verifikasi CIT_TSI }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TSI}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TSI_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TSI_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TSI_fieldblock}
+											
+{BEGIN CIT_FL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_FL}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_FL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="CIT_FL" data-fieldname="CIT_FL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_FL}">
+		{$label TEMPBSICIT_verifikasi CIT_FL }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_FL}
+	</div>
+	<div class="r-search-field">
+		{$CIT_FL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_FL_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_FL_fieldblock}
+											
+{BEGIN CIT_ASAL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_ASAL}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_ASAL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="CIT_ASAL" data-fieldname="CIT_ASAL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_ASAL}">
+		{$label TEMPBSICIT_verifikasi CIT_ASAL }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_ASAL}
+	</div>
+	<div class="r-search-field">
+		{$CIT_ASAL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_ASAL_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_ASAL_fieldblock}
+											
+{BEGIN CIT_TUJUAN_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TUJUAN}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TUJUAN{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="CIT_TUJUAN" data-fieldname="CIT_TUJUAN" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TUJUAN}">
+		{$label TEMPBSICIT_verifikasi CIT_TUJUAN }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TUJUAN}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TUJUAN_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TUJUAN_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TUJUAN_fieldblock}
+											
+{BEGIN CIT_TOKEN_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TOKEN}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TOKEN{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="CIT_TOKEN" data-fieldname="CIT_TOKEN" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TOKEN}">
+		{$label TEMPBSICIT_verifikasi CIT_TOKEN }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TOKEN}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TOKEN_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TOKEN_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TOKEN_fieldblock}
+											
+{BEGIN CIT_BSMID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_BSMID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_BSMID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="CIT_BSMID" data-fieldname="CIT_BSMID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_BSMID}">
+		{$label TEMPBSICIT_verifikasi CIT_BSMID }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_BSMID}
+	</div>
+	<div class="r-search-field">
+		{$CIT_BSMID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_BSMID_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_BSMID_fieldblock}
+											
+{BEGIN CIT_PROPOSAL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_PROPOSAL}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_PROPOSAL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="CIT_PROPOSAL" data-fieldname="CIT_PROPOSAL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_PROPOSAL}">
+		{$label TEMPBSICIT_verifikasi CIT_PROPOSAL }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_PROPOSAL}
+	</div>
+	<div class="r-search-field">
+		{$CIT_PROPOSAL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_PROPOSAL_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_PROPOSAL_fieldblock}
+											
+{BEGIN CIT_PREMI_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_PREMI}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_PREMI{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="CIT_PREMI" data-fieldname="CIT_PREMI" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_PREMI}">
+		{$label TEMPBSICIT_verifikasi CIT_PREMI }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_PREMI}
+	</div>
+	<div class="r-search-field">
+		{$CIT_PREMI_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_PREMI_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_PREMI_fieldblock}
+											
+{BEGIN CIT_PERIODE_END_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_PERIODE_END}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_PERIODE_END{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="CIT_PERIODE_END" data-fieldname="CIT_PERIODE_END" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_PERIODE_END}">
+		{$label TEMPBSICIT_verifikasi CIT_PERIODE_END }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_PERIODE_END}
+	</div>
+	<div class="r-search-field">
+		{$CIT_PERIODE_END_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_PERIODE_END_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_PERIODE_END_fieldblock}
+											
+{BEGIN CIT_APP_USER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_APP_USER}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_APP_USER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="CIT_APP_USER" data-fieldname="CIT_APP_USER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_APP_USER}">
+		{$label TEMPBSICIT_verifikasi CIT_APP_USER }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_APP_USER}
+	</div>
+	<div class="r-search-field">
+		{$CIT_APP_USER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_APP_USER_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_APP_USER_fieldblock}
+											
+{BEGIN CIT_APP_DATE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_APP_DATE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_APP_DATE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="CIT_APP_DATE" data-fieldname="CIT_APP_DATE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_APP_DATE}">
+		{$label TEMPBSICIT_verifikasi CIT_APP_DATE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_APP_DATE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_APP_DATE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_APP_DATE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_APP_DATE_fieldblock}
+											
+{BEGIN CIT_APP_NOTE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_APP_NOTE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_APP_NOTE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="CIT_APP_NOTE" data-fieldname="CIT_APP_NOTE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_APP_NOTE}">
+		{$label TEMPBSICIT_verifikasi CIT_APP_NOTE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_APP_NOTE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_APP_NOTE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_APP_NOTE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_APP_NOTE_fieldblock}
+											
+{BEGIN CIT_APP_FL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_APP_FL}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_APP_FL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="CIT_APP_FL" data-fieldname="CIT_APP_FL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_APP_FL}">
+		{$label TEMPBSICIT_verifikasi CIT_APP_FL }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_APP_FL}
+	</div>
+	<div class="r-search-field">
+		{$CIT_APP_FL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_APP_FL_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_APP_FL_fieldblock}
+											
+{BEGIN CIT_TO_USER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TO_USER}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TO_USER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="CIT_TO_USER" data-fieldname="CIT_TO_USER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TO_USER}">
+		{$label TEMPBSICIT_verifikasi CIT_TO_USER }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TO_USER}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TO_USER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TO_USER_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TO_USER_fieldblock}
+											
+{BEGIN CIT_TO_DATE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TO_DATE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_TO_DATE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="CIT_TO_DATE" data-fieldname="CIT_TO_DATE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_TO_DATE}">
+		{$label TEMPBSICIT_verifikasi CIT_TO_DATE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_TO_DATE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_TO_DATE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_TO_DATE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_TO_DATE_fieldblock}
+											
+{BEGIN CIT_LIMIT_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_LIMIT}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_LIMIT{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="CIT_LIMIT" data-fieldname="CIT_LIMIT" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_LIMIT}">
+		{$label TEMPBSICIT_verifikasi CIT_LIMIT }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_LIMIT}
+	</div>
+	<div class="r-search-field">
+		{$CIT_LIMIT_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_LIMIT_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_LIMIT_fieldblock}
+											
+{BEGIN IS_OL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_IS_OL}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="IS_OL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="IS_OL" data-fieldname="IS_OL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_IS_OL}">
+		{$label TEMPBSICIT_verifikasi IS_OL }	</label>
+	<div class="r-search-option">
+		{$searchtype_IS_OL}
+	</div>
+	<div class="r-search-field">
+		{$IS_OL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$IS_OL_editcontrol1}
+	</div>
+	
+</div>
+
+{END IS_OL_fieldblock}
+											
+{BEGIN CIT_MODE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_MODE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CIT_MODE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="CIT_MODE" data-fieldname="CIT_MODE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CIT_MODE}">
+		{$label TEMPBSICIT_verifikasi CIT_MODE }	</label>
+	<div class="r-search-option">
+		{$searchtype_CIT_MODE}
+	</div>
+	<div class="r-search-field">
+		{$CIT_MODE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CIT_MODE_editcontrol1}
+	</div>
+	
+</div>
+
+{END CIT_MODE_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Cari			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Tata ulang			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Batal			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

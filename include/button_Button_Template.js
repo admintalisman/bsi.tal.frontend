@@ -1,0 +1,6 @@
+
+Runner.buttonEvents["Button_Template"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Button_Template';if(!pageObj.buttonEventBefore['Button_Template']){pageObj.buttonEventBefore['Button_Template']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;ajax.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['Button_Template']){pageObj.buttonEventAfter['Button_Template']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;function downloadURI(uri,name){var link=document.createElement("a");link.download=name;link.href=uri;document.body.appendChild(link);link.click();document.body.removeChild(link);delete link;}
+downloadURI("https://bsi.talisman.host/file/Format_Upload_CIS.xlsx");var message="download success";ajax.setMessage(message);}}
+$('a[id="Button_Template"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="Button_Template"+"_"+Runner.genId();var button_Button_Template=new Runner.form.Button({id:this.id,btnName:"Button_Template"});button_Button_Template.init({args:[pageObj,proxy,pageid]});});};

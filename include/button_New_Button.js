@@ -1,0 +1,6 @@
+
+Runner.buttonEvents["New_Button"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button';if(!pageObj.buttonEventBefore['New_Button']){pageObj.buttonEventBefore['New_Button']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;params["txt"]="Hello";ajax.setMessage("download file...");}}
+if(!pageObj.buttonEventAfter['New_Button']){pageObj.buttonEventAfter['New_Button']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;function downloadURI(uri,name){var link=document.createElement("a");link.download=name;link.href=uri;document.body.appendChild(link);link.click();document.body.removeChild(link);delete link;}
+downloadURI("https://apps-mugs.com/template_cilem.xlsx","template_cilem.xlsx");var message="download success";ajax.setMessage(message);}}
+$('a[id="New_Button"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="New_Button"+"_"+Runner.genId();var button_New_Button=new Runner.form.Button({id:this.id,btnName:"New_Button"});button_New_Button.init({args:[pageObj,proxy,pageid]});});};

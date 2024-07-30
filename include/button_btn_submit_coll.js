@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["btn_submit_coll"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='btn_submit_coll';if(!pageObj.buttonEventBefore['btn_submit_coll']){pageObj.buttonEventBefore['btn_submit_coll']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;}}
+if(!pageObj.buttonEventAfter['btn_submit_coll']){pageObj.buttonEventAfter['btn_submit_coll']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["text"];ajax.setMessage(message);window.location.replace("http://localhost:8090/tempbsicit_coll_list.php");}}
+$('a[id="btn_submit_coll"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="btn_submit_coll"+"_"+Runner.genId();var button_btn_submit_coll=new Runner.form.Button({id:this.id,btnName:"btn_submit_coll"});button_btn_submit_coll.init({args:[pageObj,proxy,pageid]});});};

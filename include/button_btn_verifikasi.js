@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["btn_verifikasi"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='btn_verifikasi';if(!pageObj.buttonEventBefore['btn_verifikasi']){pageObj.buttonEventBefore['btn_verifikasi']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;params["txt"]="Hello";ajax.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['btn_verifikasi']){pageObj.buttonEventAfter['btn_verifikasi']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var popup=Runner.displayPopup({url:"TEMPBSICIT_verifikasi_edit1.php??editid1=16&",width:700,height:500,header:'Verifikasi'});}}
+$('a[id="btn_verifikasi"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="btn_verifikasi"+"_"+Runner.genId();var button_btn_verifikasi=new Runner.form.Button({id:this.id,btnName:"btn_verifikasi"});button_btn_verifikasi.init({args:[pageObj,proxy,pageid]});});};

@@ -1,0 +1,352 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel TEMPBSICIS view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN IDCIS_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_IDCIS}  r-vertical-field" data-fieldname="IDCIS" data-signal-error-for="IDCIS{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="IDCIS" data-fieldname="IDCIS" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_IDCIS}">
+		
+		{BEGIN IDCIS_label}{$label TEMPBSICIS IDCIS }{END IDCIS_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$IDCIS_value}	</div>
+
+		
+</div>
+
+
+{END IDCIS_fieldblock}
+											
+{BEGIN CIS_UPL_USER_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_UPL_USER}  r-vertical-field" data-fieldname="CIS_UPL_USER" data-signal-error-for="CIS_UPL_USER{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="CIS_UPL_USER" data-fieldname="CIS_UPL_USER" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_UPL_USER}">
+		
+		{BEGIN CIS_UPL_USER_label}{$label TEMPBSICIS CIS_UPL_USER }{END CIS_UPL_USER_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_UPL_USER_value}	</div>
+
+		
+</div>
+
+
+{END CIS_UPL_USER_fieldblock}
+											
+{BEGIN CIS_UPL_DATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_UPL_DATE}  r-vertical-field" data-fieldname="CIS_UPL_DATE" data-signal-error-for="CIS_UPL_DATE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="CIS_UPL_DATE" data-fieldname="CIS_UPL_DATE" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_UPL_DATE}">
+		
+		{BEGIN CIS_UPL_DATE_label}{$label TEMPBSICIS CIS_UPL_DATE }{END CIS_UPL_DATE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_UPL_DATE_value}	</div>
+
+		
+</div>
+
+
+{END CIS_UPL_DATE_fieldblock}
+											
+{BEGIN DATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DATE}  r-vertical-field" data-fieldname="DATE" data-signal-error-for="DATE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="DATE" data-fieldname="DATE" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DATE}">
+		
+		{BEGIN DATE_label}{$label TEMPBSICIS DATE }{END DATE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DATE_value}	</div>
+
+		
+</div>
+
+
+{END DATE_fieldblock}
+											
+{BEGIN KODECABANG_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_KODECABANG}  r-vertical-field" data-fieldname="KODECABANG" data-signal-error-for="KODECABANG{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="KODECABANG" data-fieldname="KODECABANG" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_KODECABANG}">
+		
+		{BEGIN KODECABANG_label}{$label TEMPBSICIS KODECABANG }{END KODECABANG_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$KODECABANG_value}	</div>
+
+		
+</div>
+
+
+{END KODECABANG_fieldblock}
+											
+{BEGIN SUMINSURED_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SUMINSURED}  r-vertical-field" data-fieldname="SUMINSURED" data-signal-error-for="SUMINSURED{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="SUMINSURED" data-fieldname="SUMINSURED" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_SUMINSURED}">
+		
+		{BEGIN SUMINSURED_label}{$label TEMPBSICIS SUMINSURED }{END SUMINSURED_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$SUMINSURED_value}	</div>
+
+		
+</div>
+
+
+{END SUMINSURED_fieldblock}
+											
+{BEGIN CIS_REGION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_REGION}  r-vertical-field" data-fieldname="CIS_REGION" data-signal-error-for="CIS_REGION{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="CIS_REGION" data-fieldname="CIS_REGION" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_REGION}">
+		
+		{BEGIN CIS_REGION_label}{$label TEMPBSICIS CIS_REGION }{END CIS_REGION_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_REGION_value}	</div>
+
+		
+</div>
+
+
+{END CIS_REGION_fieldblock}
+											
+{BEGIN CIS_AREA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_AREA}  r-vertical-field" data-fieldname="CIS_AREA" data-signal-error-for="CIS_AREA{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CIS_AREA" data-fieldname="CIS_AREA" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_AREA}">
+		
+		{BEGIN CIS_AREA_label}{$label TEMPBSICIS CIS_AREA }{END CIS_AREA_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_AREA_value}	</div>
+
+		
+</div>
+
+
+{END CIS_AREA_fieldblock}
+											
+{BEGIN CIS_TOKEN_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_TOKEN}  r-vertical-field" data-fieldname="CIS_TOKEN" data-signal-error-for="CIS_TOKEN{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="CIS_TOKEN" data-fieldname="CIS_TOKEN" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_TOKEN}">
+		
+		{BEGIN CIS_TOKEN_label}{$label TEMPBSICIS CIS_TOKEN }{END CIS_TOKEN_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_TOKEN_value}	</div>
+
+		
+</div>
+
+
+{END CIS_TOKEN_fieldblock}
+											
+{BEGIN CIS_TIPE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIS_TIPE}  r-vertical-field" data-fieldname="CIS_TIPE" data-signal-error-for="CIS_TIPE{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="CIS_TIPE" data-fieldname="CIS_TIPE" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CIS_TIPE}">
+		
+		{BEGIN CIS_TIPE_label}{$label TEMPBSICIS CIS_TIPE }{END CIS_TIPE_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CIS_TIPE_value}	</div>
+
+		
+</div>
+
+
+{END CIS_TIPE_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Tutup jendela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="tempbsicis_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["btn_submit"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='btn_submit';if(!pageObj.buttonEventBefore['btn_submit']){pageObj.buttonEventBefore['btn_submit']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;}}
+if(!pageObj.buttonEventAfter['btn_submit']){pageObj.buttonEventAfter['btn_submit']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["text"];ajax.setMessage(message);window.location.replace("http://localhost:8090/tempbsicit_cit_list.php");}}
+$('a[id="btn_submit"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="btn_submit"+"_"+Runner.genId();var button_btn_submit=new Runner.form.Button({id:this.id,btnName:"btn_submit"});button_btn_submit.init({args:[pageObj,proxy,pageid]});});};

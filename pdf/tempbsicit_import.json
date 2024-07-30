@@ -1,0 +1,184 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel TEMPBSICIT import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$IDCIT_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$CIT_REGDATE_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$CIT_IDCBG_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$CIT_MTU_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$CIT_TTG_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$CIT_DATE_DEPART_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$CIT_DATE_ARRIV_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$CIT_EMP_NAMA_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$CIT_SEC_NAMA_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$CIT_VECH_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$CIT_NUMBER_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$CIT_ADD_USER_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$CIT_ADD_DATE_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$CIT_EDIT_USER_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$CIT_EDIT_DATE_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$CIT_TSI_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$CIT_FL_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$CIT_ASAL_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+				
+			{"text":{$CIT_TUJUAN_pdfvalue},"hidden":"{$item_hide_import_field18}"},
+				
+				
+			{"text":{$CIT_TOKEN_pdfvalue},"hidden":"{$item_hide_import_field19}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

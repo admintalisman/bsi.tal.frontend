@@ -1,0 +1,920 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+	<body class="{$stylename} function-edit"  >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				data-fixed 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="notifications" {$item_notifications} data-topcell-item-type="notifications" >
+				<div class="dropdown" data-itemtype="notifications" data-itemid="notifications" {$item_notifications} data-pageid="{$pageid}" id="notifications{$id}">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+		<i class="fa fa-bell"></i>
+		<span class="badge badge-warning" ></span>
+	</button>
+	<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+		<div class="r-noti-header">
+			<span class="r-noti-h-text">
+				Pemberitahuan			</span>
+			<!--
+			<a class="r-noti-all">
+				see all
+			</a>
+			-->
+			<a class="r-noti-close" href="#">
+				<i class="fa fa-times"></i>
+			</a>
+		</div>
+		<div class="r-noti-messages">
+		</div>
+	</div>
+	
+<script type="text/x-tmpl" id="noti-message">
+	<a draggable="false" class="r-noti-message" 
+		{% if (o.url ) { %} 
+			href="{%=o.url%}" 
+		{% } %}
+		>
+		<span class="r-noti-img">
+			{% if (o.iconType == 'fa') { %}
+			<span class="fa {%=o.icon%}"></span>
+			{% } else if (o.iconType == 'bs') { %}
+			<span class="glyphicon {%=o.icon%}"></span>
+			{% } else if (o.icon) { %}
+			<img src="{%=o.icon%}">
+			{% } %}
+		</span>
+		<span class="r-noti-text">
+			<span class="r-noti-title">
+				{% if (o.title) { %}
+					<span class="r-noti-title-text">
+						{%=o.title%}
+					</span>
+				{% } %}
+				<span class="r-noti-when">
+					{%=o.time%}
+				</span>
+			</span>
+			<span class="r-noti-body">
+				{%=o.message%}
+			</span>
+		</span>
+		{% if (o.new) { %}
+		<span class="r-noti-new">
+			<span class="fa fa-circle"></span>
+		</span>
+		{% } %}
+	</a>
+</script>	
+
+</div>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil pengguna		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Rubah password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="full" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="full" >
+						
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Balik ke daftar</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="tempbsicit_cit_view.php?{$editlink}" {$view_page_button_attrs}>Lihat</a>
+{END message_view_page_button}
+</div>
+</div>
+			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}" data-page="tempbsicit_cit_edit">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Cash In Transit			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="topbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_REGDATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_REGDATE}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_REGDATE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="CIT_REGDATE" data-fieldname="CIT_REGDATE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_REGDATE}">
+		{BEGIN CIT_REGDATE_label}{$label TEMPBSICIT_CIT CIT_REGDATE }{END CIT_REGDATE_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_REGDATE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_REGDATE">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_REGDATE }		</div>
+	</div>
+</div>
+
+
+{END CIT_REGDATE_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_IDCBG_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_IDCBG}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_IDCBG{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="CIT_IDCBG" data-fieldname="CIT_IDCBG" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_IDCBG}">
+		{BEGIN CIT_IDCBG_label}{$label TEMPBSICIT_CIT CIT_IDCBG }{END CIT_IDCBG_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_IDCBG_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_IDCBG">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_IDCBG }		</div>
+	</div>
+</div>
+
+
+{END CIT_IDCBG_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_TTG_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_TTG}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_TTG{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="CIT_TTG" data-fieldname="CIT_TTG" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_TTG}">
+		{BEGIN CIT_TTG_label}{$label TEMPBSICIT_CIT CIT_TTG }{END CIT_TTG_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_TTG_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_TTG">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_TTG }		</div>
+	</div>
+</div>
+
+
+{END CIT_TTG_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+		
+							
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c2}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section1" {$item_section1} data-pageid="{$pageid}" data-page="tempbsicit_cit_edit">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section2{$pageid}" aria-expanded="true" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+							</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="topbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_DATE_DEPART_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_DATE_DEPART}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_DATE_DEPART{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="CIT_DATE_DEPART" data-fieldname="CIT_DATE_DEPART" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_DATE_DEPART}">
+		{BEGIN CIT_DATE_DEPART_label}{$label TEMPBSICIT_CIT CIT_DATE_DEPART }{END CIT_DATE_DEPART_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_DATE_DEPART_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_DATE_DEPART">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_DATE_DEPART }		</div>
+	</div>
+</div>
+
+
+{END CIT_DATE_DEPART_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_DATE_ARRIV_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_DATE_ARRIV}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_DATE_ARRIV{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="CIT_DATE_ARRIV" data-fieldname="CIT_DATE_ARRIV" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_DATE_ARRIV}">
+		{BEGIN CIT_DATE_ARRIV_label}{$label TEMPBSICIT_CIT CIT_DATE_ARRIV }{END CIT_DATE_ARRIV_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_DATE_ARRIV_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_DATE_ARRIV">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_DATE_ARRIV }		</div>
+	</div>
+</div>
+
+
+{END CIT_DATE_ARRIV_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_EMP_NAMA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_EMP_NAMA}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_EMP_NAMA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="CIT_EMP_NAMA" data-fieldname="CIT_EMP_NAMA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_EMP_NAMA}">
+		{BEGIN CIT_EMP_NAMA_label}{$label TEMPBSICIT_CIT CIT_EMP_NAMA }{END CIT_EMP_NAMA_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_EMP_NAMA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_EMP_NAMA">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_EMP_NAMA }		</div>
+	</div>
+</div>
+
+
+{END CIT_EMP_NAMA_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+																
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_SEC_NAMA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_SEC_NAMA}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_SEC_NAMA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CIT_SEC_NAMA" data-fieldname="CIT_SEC_NAMA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_SEC_NAMA}">
+		{BEGIN CIT_SEC_NAMA_label}{$label TEMPBSICIT_CIT CIT_SEC_NAMA }{END CIT_SEC_NAMA_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_SEC_NAMA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_SEC_NAMA">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_SEC_NAMA }		</div>
+	</div>
+</div>
+
+
+{END CIT_SEC_NAMA_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
+								</tr>
+	 
+	 
+														<tr {$row_section1_2} >
+										
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_VECH_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_VECH}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_VECH{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="CIT_VECH" data-fieldname="CIT_VECH" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_VECH}">
+		{BEGIN CIT_VECH_label}{$label TEMPBSICIT_CIT CIT_VECH }{END CIT_VECH_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_VECH_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_VECH">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_VECH }		</div>
+	</div>
+</div>
+
+
+{END CIT_VECH_fieldblock}
+											
+{BEGIN CIT_LIMIT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_LIMIT}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_LIMIT{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="CIT_LIMIT" data-fieldname="CIT_LIMIT" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_LIMIT}">
+		{BEGIN CIT_LIMIT_label}{$label TEMPBSICIT_CIT CIT_LIMIT }{END CIT_LIMIT_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_LIMIT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_LIMIT">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_LIMIT }		</div>
+	</div>
+</div>
+
+
+{END CIT_LIMIT_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+			 
+																
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIT_NUMBER_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_NUMBER}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_NUMBER{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="CIT_NUMBER" data-fieldname="CIT_NUMBER" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_NUMBER}">
+		{BEGIN CIT_NUMBER_label}{$label TEMPBSICIT_CIT CIT_NUMBER }{END CIT_NUMBER_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_NUMBER_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_NUMBER">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_NUMBER }		</div>
+	</div>
+</div>
+
+
+{END CIT_NUMBER_fieldblock}
+											
+{BEGIN CIT_FL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIT_FL}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="CIT_FL{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="CIT_FL" data-fieldname="CIT_FL" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIT_FL}">
+		{BEGIN CIT_FL_label}{$label TEMPBSICIT_CIT CIT_FL }{END CIT_FL_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIT_FL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIT_FL">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT CIT_FL }		</div>
+	</div>
+</div>
+
+
+{END CIT_FL_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c7}
+								</tr>
+	 
+	 
+														<tr {$row_section1_3} >
+										
+
+{BEGIN cellblock_section1_c10}
+<td
+	{$cell_section1_c10}
+	class="r-align-center r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="2"		data-cellId="section1_c10" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN IS_OL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_IS_OL}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="IS_OL{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-page="tempbsicit_cit_edit" data-field="IS_OL" data-fieldname="IS_OL" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_IS_OL}">
+		{BEGIN IS_OL_label}{$label TEMPBSICIT_CIT IS_OL }{END IS_OL_label}
+	</label>
+	<div class="r-edit-field">
+		{$IS_OL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="IS_OL">
+		<div class="text-muted" >
+		{$tooltip TEMPBSICIT_CIT IS_OL }		</div>
+	</div>
+</div>
+
+
+{END IS_OL_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c10}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section2" {$item_section2} data-pageid="{$pageid}" data-page="tempbsicit_cit_edit">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section3{$pageid}" aria-expanded="true" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Informasi Tambahan (Asal dan Tujuan)			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_tembsicitasal_view}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$details_pagetitle_tembsicitasal_view}			
+							<span>
+					{$detailslButtons_tembsicitasal_view}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_tembsicitasal_view}
+		</div>
+	</div>
+</div>
+{END details_tembsicitasal_view}
+	
+				{END section2_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Simpan			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Balik ke daftar			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Batal			</a>
+</span>
+{END close_button}
+	 
+		<span data-itemtype="custom_button" data-itemid="custom_button" {$item_custom_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" id="btn_submit" href="javascript:void(0)" typeid="ib" >
+							Submit			</a>
+</span>
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Tata ulang		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="tempbsicit_cit_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Lihat		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+											
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

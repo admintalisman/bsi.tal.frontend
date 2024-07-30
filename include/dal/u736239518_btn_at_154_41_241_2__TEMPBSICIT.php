@@ -1,0 +1,40 @@
+<?php
+$dalTableTEMPBSICIT = array();
+$dalTableTEMPBSICIT["IDCIT"] = array("type"=>3,"varname"=>"IDCIT", "name" => "IDCIT", "autoInc" => "1");
+$dalTableTEMPBSICIT["CIT_REGDATE"] = array("type"=>135,"varname"=>"CIT_REGDATE", "name" => "CIT_REGDATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_IDCBG"] = array("type"=>200,"varname"=>"CIT_IDCBG", "name" => "CIT_IDCBG", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_MTU"] = array("type"=>200,"varname"=>"CIT_MTU", "name" => "CIT_MTU", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TTG"] = array("type"=>200,"varname"=>"CIT_TTG", "name" => "CIT_TTG", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_DATE_DEPART"] = array("type"=>135,"varname"=>"CIT_DATE_DEPART", "name" => "CIT_DATE_DEPART", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_DATE_ARRIV"] = array("type"=>135,"varname"=>"CIT_DATE_ARRIV", "name" => "CIT_DATE_ARRIV", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_EMP_NAMA"] = array("type"=>200,"varname"=>"CIT_EMP_NAMA", "name" => "CIT_EMP_NAMA", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_SEC_NAMA"] = array("type"=>200,"varname"=>"CIT_SEC_NAMA", "name" => "CIT_SEC_NAMA", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_VECH"] = array("type"=>200,"varname"=>"CIT_VECH", "name" => "CIT_VECH", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_NUMBER"] = array("type"=>200,"varname"=>"CIT_NUMBER", "name" => "CIT_NUMBER", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_ADD_USER"] = array("type"=>200,"varname"=>"CIT_ADD_USER", "name" => "CIT_ADD_USER", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_ADD_DATE"] = array("type"=>135,"varname"=>"CIT_ADD_DATE", "name" => "CIT_ADD_DATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_EDIT_USER"] = array("type"=>200,"varname"=>"CIT_EDIT_USER", "name" => "CIT_EDIT_USER", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_EDIT_DATE"] = array("type"=>135,"varname"=>"CIT_EDIT_DATE", "name" => "CIT_EDIT_DATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TSI"] = array("type"=>14,"varname"=>"CIT_TSI", "name" => "CIT_TSI", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_FL"] = array("type"=>3,"varname"=>"CIT_FL", "name" => "CIT_FL", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_ASAL"] = array("type"=>200,"varname"=>"CIT_ASAL", "name" => "CIT_ASAL", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TUJUAN"] = array("type"=>200,"varname"=>"CIT_TUJUAN", "name" => "CIT_TUJUAN", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TOKEN"] = array("type"=>200,"varname"=>"CIT_TOKEN", "name" => "CIT_TOKEN", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_BSMID"] = array("type"=>200,"varname"=>"CIT_BSMID", "name" => "CIT_BSMID", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_PROPOSAL"] = array("type"=>200,"varname"=>"CIT_PROPOSAL", "name" => "CIT_PROPOSAL", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_PREMI"] = array("type"=>14,"varname"=>"CIT_PREMI", "name" => "CIT_PREMI", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_PERIODE_END"] = array("type"=>135,"varname"=>"CIT_PERIODE_END", "name" => "CIT_PERIODE_END", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_APP_USER"] = array("type"=>200,"varname"=>"CIT_APP_USER", "name" => "CIT_APP_USER", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_APP_DATE"] = array("type"=>135,"varname"=>"CIT_APP_DATE", "name" => "CIT_APP_DATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_APP_NOTE"] = array("type"=>200,"varname"=>"CIT_APP_NOTE", "name" => "CIT_APP_NOTE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_APP_FL"] = array("type"=>3,"varname"=>"CIT_APP_FL", "name" => "CIT_APP_FL", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TO_USER"] = array("type"=>200,"varname"=>"CIT_TO_USER", "name" => "CIT_TO_USER", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_TO_DATE"] = array("type"=>135,"varname"=>"CIT_TO_DATE", "name" => "CIT_TO_DATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_RATE"] = array("type"=>14,"varname"=>"CIT_RATE", "name" => "CIT_RATE", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_LIMIT"] = array("type"=>14,"varname"=>"CIT_LIMIT", "name" => "CIT_LIMIT", "autoInc" => "0");
+$dalTableTEMPBSICIT["IS_OL"] = array("type"=>3,"varname"=>"IS_OL", "name" => "IS_OL", "autoInc" => "0");
+$dalTableTEMPBSICIT["CIT_MODE"] = array("type"=>200,"varname"=>"CIT_MODE", "name" => "CIT_MODE", "autoInc" => "0");
+$dalTableTEMPBSICIT["IDCIT"]["key"]=true;
+
+$dal_info["u736239518_btn_at_154_41_241_2__TEMPBSICIT"] = &$dalTableTEMPBSICIT;
+?>

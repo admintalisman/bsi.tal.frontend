@@ -1,0 +1,166 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel SOA_CIT_view1 export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$NOPROPOSAL_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+				
+			{"text":{$KODEKC_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$CABANGBANK_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$COB_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$DIVISI_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$AWAL_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$AKHIR_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$ASAL_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$TUJUAN_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$MTU_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$SUMINSURED_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$PREMI_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$MODE_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$RATE_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  
